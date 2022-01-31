@@ -46,8 +46,9 @@ const btnName = () => {
     const k = searchName.value;
     compereName.push(k);
 
+    //compare two arrays 
     function equal(a, b) {
-        return a.some(function (arr) {
+        return a.find(function (arr) {
             return b === arr;
         })
     }
